@@ -1,0 +1,20 @@
+<!doctype.html>
+
+<title> First Template </title>
+<link rel=stylesheet type=text/css href="{{url_for('static', filename= 'style.css')}}">
+<div class=page>
+{% if username %}
+	<h1> Hello {{username}} </h1>
+{% else %}
+	<h1> Username not defined! </h1>
+{% endif %}	
+
+<form action ="{{url_for('addentry')}}" method = post class= add-entry>
+	Contact Name: <input type=text name=contact_name><br>
+	Phone number: <input type=number name=phonenumber><br>
+	<input type="submit" value="Submit">
+</form>
+{% for message in get_flashed_messages () %}
+	<div class=flash>{{ message}}</div>
+{% endfor %}	
+</div>	
