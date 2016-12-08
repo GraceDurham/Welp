@@ -1,0 +1,42 @@
+<!doctype.html>
+<html lang="en>
+<head>
+	<meta charset="utf-8">
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" 
+              integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" href="hero.css" />
+	<title>Resturant Recommendations</title>
+	<link rel="stylesheet" href="./style.css">
+	</head>
+<title>Resturant Recommendations</title>
+<body>
+<div class="page">
+	<h1><strong>Forecasting Good Food for {{city}} {{state}}<strong></strong></h1>
+	{% for resturant in resturants %}
+		<div>
+			<h3>{{resturant.name}}</h3>
+			<a target="_blank" href="{{resturant.url}}">
+				<img src="{{resturant.image_url}}" />
+			</a>
+			<br/>
+			<img src="{{resturant.rating_img_url}}"/>
+			<p><strong>{{resturant.review_count}} Reviews<strong></p>
+		</div>
+	{% endfor %}	
+</div>	
+<footer>
+            <hr />
+            <nav class="nav nav-inline">
+              <a class="nav-link" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+              <a class="nav-link" href="https://github.com"><i class="fa fa-github"></i> Github</a>
+              <a class="nav-link" href="https://www.facebook.com/"><i class="fa fa-facebook"></i> Facebook</a>
+              <a class="nav-link" href="https://twitter.com/"><i class="fa fa-twitter"></i> Twitter</a>
+            </nav>
+          </footer>
+</body>
+</html>
