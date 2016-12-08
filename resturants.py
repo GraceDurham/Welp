@@ -7,8 +7,16 @@ app = Flask(__name__)
 
 @app.route('/recomendations', methods=['GET'])
 def list_recomendations():
-	resturants = resturant_recommender.recommend_based_on_weather("MO", "Kansas City")
-	return render_template('recomendations/list.html', resturants=resturants)
+	state = request.args.get("state")
+	city = request.args.get("city")
+
+	resturants = resturant_recommender.recommend_based_on_weather(state, city)
+	return render_template('recomendations/list.html', resturants=resturants, state=state, city=city)
+
+
+@app.route('/', methods=['GET'])
+def default():
+	return render_template('recomendations/index.html')
 
 if __name__ == '__main__':
 	# init_db()

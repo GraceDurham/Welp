@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Resturant Recommendations</title>
+
+<div class=page>
+	{% if error %}<p>Error: {{ error}} {% endif %}
+	<form action="{{url_for('list_recomendations')}}" method="get">
+		City: <input type="text" name="city">
+		State: <input type="text" name="state">
+		<input type="submit" value="Submit">
+	</form>	
+</div>
