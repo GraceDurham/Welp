@@ -12,7 +12,6 @@ def recommend_based_on_weather(state, city):
 	if(temp > 65):
 		search_term = 'outdoor seating'
 		headline = "It feels like " + str_temp + " outside. What a great day to go to an outdoor resturant. Pick one below."
-
 	elif(temp < 40):
 		search_term = 'soup'   
 		headline = "It feels like " + str_temp + " outside. Better grub somewhere warm with soup. Pick one below."

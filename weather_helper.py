@@ -14,6 +14,6 @@ def fetch_weather(city, state):
 	json_obj=load(response)
 
 	if json_obj.get("current_observation"):
-		return json_obj["current_observation"]["feelslike_f"]
+		return int(json_obj["current_observation"]["feelslike_f"])
 
 	return 0   
