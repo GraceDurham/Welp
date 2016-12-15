@@ -10,8 +10,8 @@
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>  
-		<h1 class="grace-blue">Welp Forecaster</h1>    
-		<div class=page>
+		<a href="/"><h1 class="grace-blue push-left">Welp Forecaster</h1> </a>   
+		<div class="page">
 		{% if error %}<p>Error: {{ error}} {% endif %}
 		<form action="{{url_for('list_recomendations')}}" method="get">
 			<nav class="navbar navbar-light grace-nav" style="background-color: #FF00CC;">
