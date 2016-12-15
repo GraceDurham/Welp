@@ -9,7 +9,6 @@ from yelp.oauth1_authenticator import Oauth1Authenticator
 def get_temperature_from_weather_underground(user_state, user_city):
     url_base = 'http://api.wunderground.com/api/' + weather_underground_key
     apiUrl = url_base+"/conditions/q/"+pathname2url(user_state)+"/"+pathname2url(user_city)+".json"
-
     response=urlopen(apiUrl)
 
     json_obj=load(response)
@@ -70,5 +69,5 @@ def main():
             
             fetch_and_print_resturants(state, city, search_term)
 
-# if __name__ == '__main__':
-#  	main()
+if __name__ == '__main__':
+ 	main()
