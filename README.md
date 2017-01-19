@@ -4,24 +4,13 @@ TODO
 pip freeze > requirements.txt
 
 
-'display_phone',
-'distance',
-'eat24_url',
-'id',
-'image_url',
-'is_claimed',
-'is_closed',
-'menu_provider',
-'menu_date_updated',
-'mobile_url',
-'name',
-'phone',
-'rating',
-'rating_img_url',
-'rating_img_url_small',
-'rating_img_url_large',
-'reservation_url',
-'review_count',
-'snippet_image_url',
-'snippet_text',
-'url'
+click==6.6
+Flask==0.11.1
+httplib2==0.9.2
+itsdangerous==0.24
+Jinja2==2.8
+MarkupSafe==0.23
+oauth2==1.9.0.post1
+six==1.10.0
+Werkzeug==0.11.11
+yelp==1.0.2
