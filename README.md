@@ -1,16 +1,45 @@
-TODO
+
+Welp 
+
+Welp is a restaurant recommender based on the weather
+It uses two apis yelp and weather underground 
 
 
-pip freeze > requirements.txt
+Getting Started 
+
+1. clone to local 
+2. cd welp
 
 
-click==6.6
-Flask==0.11.1
-httplib2==0.9.2
-itsdangerous==0.24
-Jinja2==2.8
-MarkupSafe==0.23
-oauth2==1.9.0.post1
-six==1.10.0
-Werkzeug==0.11.11
-yelp==1.0.2
+
+Create and run virtual environment on command line
+3. pip install virtualenv
+4. virtualenv ENV
+5. source env/bin/activate
+
+System dependancies are in requirements.txt
+6. pip install -r requirements.txt
+
+
+Runs flask app and starts server
+7. python resturants.py 
+
+8. open http://127.0.0.1:5000/
+
+9. Type city and choose state from drop down then hit submit button 
+ 
+Ex. San Francisco choose CA hit submit button 
+
+It will grab the temperature from weather underground api 
+
+    if temperature is greater than 65
+        it will grab all resturants from yelp with outdoor seating
+    else if temperature is less than 40
+        it will grab all resturants from yelp that have soup
+        
+
+
+
+
+
+
