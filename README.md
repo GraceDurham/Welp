@@ -1,8 +1,10 @@
-
 # Welp 
 
 Welp is a restaurant recommender that makes recommendations based on today's weather.
 It uses two apis yelp and weather underground.
+
+
+![alt text](https://raw.githubusercontent.com/GraceDurham/Welp/master/preview.gif)
 
 
 ## Getting Started 
@@ -38,6 +40,6 @@ open http://127.0.0.1:5000/
 
 ## Using welp
 
-0. Type city and choose state from drop down then hit submit button 
+Type city and choose state from drop down then hit submit button 
  
 Ex. San Francisco choose CA hit submit button 
