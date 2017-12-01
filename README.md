@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ###Get Authentication from Yelp
-![Alt text]((https://raw.githubusercontent.com/GraceDurham/Welp/master/Yelp_Auth.png)?raw=true "Optional Title")
+![alt text](https://raw.githubusercontent.com/GraceDurham/Welp/master/Yelp_Auth.png)
 
 #### Runs flask app (start server)
 
